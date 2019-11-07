@@ -52,12 +52,20 @@ class IfoodButton extends PolymerElement {
       </style>
   
       <!-- shadow DOM goes here -->
-      <button>
-        <slot name='left-icon'></slot>
+      <button on-click="handleClickRight">
         <slot></slot> 
-        <slot name='right-icon'></slot>
+      </button>
+      <button on-click="handleClickLeft">
+        "Right"
       </button>
     `;
+  }
+
+  handleClickRight(e) {
+    this.dispatchEvent(new CustomEvent('right', {detail: {kicked: true}}));
+  }
+  handleClickLeft(e) {
+    this.dispatchEvent(new CustomEvent('left', {detail: {kicked: true}}));
   }
 
 

@@ -1,7 +1,7 @@
 {
   "name": "ifood-component-poc",
   "main": "ifood-component-poc.js",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "dependencies": {
     "@polymer/polymer": "^3.0.0"
   },
