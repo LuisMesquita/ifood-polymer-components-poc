@@ -14,9 +14,17 @@
     </script>
 
     <script type="module" src="../ifood-component-poc.js"></script>
+    <script type="module" src="../ifood-text-input.js"></script>
+    <script type="module" src="../ifood-button.js"></script>
 
     <custom-style>
       <style is="custom-style" include="demo-pages-shared-styles">
+      </style>
+       <style>
+        /* Define a document-wide default */
+        ifood-button {
+          margin: 10px 0;
+        }
       </style>
     </custom-style>
   </head>
@@ -28,6 +36,21 @@
           <ifood-component-poc></ifood-component-poc>
         </template>
       </demo-snippet>
+      <demo-snippet>
+        <template>
+          <ifood-text-input id='name' label='Dale' placeholder='dole'></ifood-text-input>
+        </template>
+      </demo-snippet>
+
+      <demo-snippet>
+        <template>
+          <ifood-button primary>primary</ifood-button>
+          <ifood-button link>link</ifood-button>
+        </template>
+      </demo-snippet>
+
+
     </div>
   </body>
+  
 </html>
